@@ -12,19 +12,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 <body>
-    <main class="conteudo">
+    <main class="container">
         <div class="principal">
-            <div class="mochila"></div>
-            <form action="" class="adicionar" id="novoItem">
-                <label for="item">Item</label>
-                <input type="text" name="nome" id="nome">
-                <label for="item">Quantidade</label>
-                <input type="number" name="quantidade" id="quantidade">
-                <input type="submit" value="Adicionar" class="cadastrar">
+            <div class="backpack"></div>
+            <form action="add" class="add" id="newItem">
+                <label for="item">New Item</label>
+                <input type="text" name="name" id="name">
+                <label for="item">Quantity</label>
+                <input type="number" name="quantity" id="quantity">
+                <input type="submit" value="send" class="send">
             </form>
         </div>
         
-        <ul class="lista" id="lista"></ul>  
+        <ul class="lista" id="list"></ul>  
            
     </main>
     <script src="js/main.js"></script>

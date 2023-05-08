@@ -2,7 +2,7 @@ body{
     background-image: url("/img/background.jpg");
     background-color: #cccccc;
 }
-.conteudo {
+.container {
     padding: 10vh 3em 0;
     display: flex;
     align-items: flex-start;
@@ -10,17 +10,18 @@ body{
     font-weight: bold;
 }
 
-.mochila {
+.backpack {
     background-image: url("/img/Backpack.ico");
     height: 256px;
+    width: 256px;
     display: grid;
 
 }
-.adicionar {
+.add{
     width: 100%;
 }
 
-.adicionar input {
+.add input {
     width: 100%;
     box-sizing: border-box;
     margin: 0.5em 0 1em;
@@ -29,17 +30,17 @@ body{
     border: 2px solid #40112D;
 }
 
-.adicionar label {
+.add label {
     display: block;
 }
 
-.cadastrar {
+.send{
     background-color: #08a7e6;
     color: #FFFFFF;
     cursor: pointer;
 }
 
-.lista {
+.list {
     margin: 0;
     padding: 0;
 }
