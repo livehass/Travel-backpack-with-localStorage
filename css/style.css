@@ -1,6 +1,32 @@
-body{
+:root{
+    --default-grey: #c0c0c0;
+    --default-white: #ffffff; 
+    --default-font:  'inter';
+    --defalt-blue: #3c92fa;
+    --default-red: #c70505;
+    --default-green: #04b849;
+    --defalt-dark-grey: #353535;
+}
+html{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     background-image: url("/img/background.jpg");
-    background-color: #cccccc;
+    background-repeat: repeat;
+    background-size: contain;
+    background-size: auto 100%;
+    animation: animatedBackground 500s linear infinite;
+    
+}
+.h1{
+    display: inline-block;
+    text-align: left;
+    margin: 10px 10px 10px 10px;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: var(--default-font);  
 }
 .container {
     padding: 10vh 3em 0;
@@ -8,47 +34,43 @@ body{
     align-items: flex-start;
     gap: 2em;
     font-weight: bold;
+    font-family: var(--default-font);
 }
 
 .backpack {
-    background-image: url("/img/Backpack.ico");
+    background-image: url("/img/test.ico");
     height: 256px;
     width: 256px;
-    display: grid;
-
+    margin-left: 20px;
 }
 .add{
     width: 100%;
 }
-
 .add input {
     width: 100%;
     box-sizing: border-box;
     margin: 0.5em 0 1em;
     padding: 1em 0.5em;
     border-radius: 10px;
-    border: 2px solid #40112D;
+    border: 2px solid var(--cor-de-fundo);
 }
-
 .add label {
     display: block;
 }
-
 .send{
     background-color: #08a7e6;
     color: #FFFFFF;
     cursor: pointer;
 }
-
 .list {
     margin: 0;
     padding: 0;
 }
-
 .item {
+    
     list-style: none;
     padding: 0.6em 2em;
-    background: #FFFFFF;
+    background: var(--default-white);
     border-radius: 10px;
     margin: 0 0 1em;
     width: 100%;
@@ -58,7 +80,6 @@ body{
     gap: 1em;
     font-size: 20px;
 }
-
 .item strong {
     border-radius: 50%;
     display: flex;
@@ -66,12 +87,29 @@ body{
     justify-content: center;
     width: 40px;
     height: 40px;
-    Background: #C5965F;
+    Background: var(--defalt-blue);
     font-weight: 400;
 }
 .checkbox{
     display: flex;
     justify-content: end;
-
+}
+.button1{
+    color: var(--default-red);
+    border-color: var(--default-red);
+}
+.button1:hover{
+    background: var(--default-red);
+}
+.send:hover{
+    background: var(--default-green);
+}
+@keyframes animatedBackground {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: -10000px 0;
+    }
 }
 

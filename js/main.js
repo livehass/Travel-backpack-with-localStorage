@@ -3,19 +3,21 @@ const list = document.getElementById("list");
 //get the itens from local storage or the array.
 const itens = JSON.parse(localStorage.getItem("itens")) || []
 
-itens.forEach(e => {
-    createElement(e)});
+itens.forEach((e) => {
+    createElement(e)
+});
 
 //send the form
-form.addEventListener("submit",(e)=>{
+form.addEventListener("submit", (e)=>{
     e.preventDefault();
 
     const name = e.target.elements['name'];
     const quantity = e.target.elements['quantity'];
+
     const exist = itens.find(e => e.name === name.value)
     console.log(exist)
     //object item
-    const  currentItem = {
+    const currentItem = {
         "name": name.value,
         "quantity": quantity.value
     }
@@ -29,7 +31,7 @@ form.addEventListener("submit",(e)=>{
         itens.push(currentItem);
     }
     localStorage.setItem("itens", JSON.stringify(itens));
-    name.valaue ="";
+    name.value ="";
     quantity.value ="";
 })
 function createElement(item){
@@ -43,14 +45,13 @@ function createElement(item){
     newItem.appendChild(buttonDelete(item.id));
     list.appendChild(newItem);
 }
-function updateElement(item){
-    document.querySelector("[data-id'"+item.id+"']").innerHTML = item.quantity;
-}
+function updateElement(item){document.querySelector("[data-id='"+item.id+"']").innerHTML = item.quantity}
 function buttonDelete(id){
     const buttonElement = document.createElement("button");
-    buttonElement.innerText = "x";
+    buttonElement.innerText = "X";
+    buttonElement.classList.add("button1");
     buttonElement.addEventListener("click", function(){
-        deleteElement(this.parentNode, id)})
+    deleteElement(this.parentNode, id)})
     return buttonElement;
 }
 function deleteElement(tag, id){
