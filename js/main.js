@@ -59,3 +59,6 @@ function deleteElement(tag, id){
     itens.splice(itens.findIndex(e => e.id === id), 1);
     localStorage.setItem("itens", JSON.stringify(itens));
 }
+
+
+
