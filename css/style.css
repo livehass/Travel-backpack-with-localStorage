@@ -99,6 +99,7 @@ html{
     border-color: var(--default-red);
 }
 .button1:hover{
+    color: var(--default-white);
     background: var(--default-red);
 }
 .send:hover{
