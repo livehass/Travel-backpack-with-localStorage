@@ -29,6 +29,7 @@ form.addEventListener("submit", (e)=>{
         currentItem.id = itens[itens.length -1] ? (itens[itens.length-1]).id + 1 : 0;
         createElement(currentItem);
         itens.push(currentItem);
+        
     }
     localStorage.setItem("itens", JSON.stringify(itens));
     name.value ="";

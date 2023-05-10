@@ -12,14 +12,16 @@ send.addEventListener("click", (e)=>{
     console.log()
 })
 */
+//the project its complete but
+import data from '../myitens.json' assert {type: "json"};
 const send = document.querySelector(".send2");
-import data from '/./myitens.json';
+send.addEventListener("click", (e)=>{
+    e.preventDefault();
+    localStorage.setItem("itens", JSON.stringify(data));
+    location.reload()
+        
+})
 
-
-send.addEventListener("submit", (e)=>{
-    localStorage.setItem("data", JSON.stringify(data));
-    
-});
 
 
 

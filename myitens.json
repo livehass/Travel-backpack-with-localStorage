@@ -1,20 +1,41 @@
 [
     {
-        "item": "Camiseta preta",
-        "quantity": 47
+        "name": "Blue shirt ",
+        "quantity": 5
     
     },
 
     {
-        "name": "Calça azul",
-        "quantity": 22
+        "name": "Blue pants ",
+        "quantity": 10
     },
 
     {
-        "name": "Camiseta amarela",
-        "peso": 3
+        "name": "This is a json",
+        "quantity": 1
+        
+    },
+
+    {
+        "name": "its realy cool",
+        "quantity": 9
+        
+    },
+
+    {
+        "name": "i'm learning",
+        "quantity": 3
+        
+    },
+
+    {
+        "name": "programing",
+        "quantity": 3
         
     }
+
+
+
 
 
  
