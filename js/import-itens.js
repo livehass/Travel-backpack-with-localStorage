@@ -9,7 +9,7 @@ send.addEventListener("click", (e)=>{
        createElement(e, e);
     })
     xhr.send();
-    console.log()
+    
 })
 */
 //the project its complete but
